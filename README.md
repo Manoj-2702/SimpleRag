@@ -55,31 +55,32 @@ python app.py
 - Clear Chat: Use the "Clear" button to reset the chat interface.
 
 
-Code Overview
-Main Functions
-load_doc(pdf_path): Loads and splits PDF documents into chunks.
-create_db(splits): Creates a vector database using FAISS.
-initialize_llmchain(llm_model, temperature, max_tokens, top_k, vector_db): Initializes the LLM chain for QA.
-initialize_database(list_file_obj): Initializes the vector database.
-initialize_LLM(llm_option, llm_temperature, max_tokens, top_k, vector_db): Sets up the LLM for QA.
-format_chat_history(message, chat_history): Formats the chat history for display.
-conversation(qa_chain, message, history): Handles the conversation logic for the chatbot.
-upload_file(file_paths): Handles file upload and processing.
-create_dataset(pdf_path, vector_db): Creates a dataset from PDF documents for model evaluation.
-evaluate_model(dataset_path, qa_chain): Evaluates the QA model against a dataset.
-Gradio Interface
+## Code Overview
+### Main Functions
+- ```load_doc(pdf_path)```: Loads and splits PDF documents into chunks.
+- ```create_db(splits)```: Creates a vector database using FAISS.
+- ```initialize_llmchain(llm_model, temperature, max_tokens, top_k, vector_db)```: Initializes the LLM chain for QA.
+- ```initialize_database(list_file_obj)```: Initializes the vector database.
+- ```initialize_LLM(llm_option, llm_temperature, max_tokens, top_k, vector_db)```: Sets up the LLM for QA.
+- ```format_chat_history(message, chat_history)```: Formats the chat history for display.
+- ```conversation(qa_chain, message, history)```: Handles the conversation logic for the chatbot.
+- ```upload_file(file_paths)```: Handles file upload and processing.
+- ```create_dataset(pdf_path, vector_db)```: Creates a dataset from PDF documents for model evaluation.
+- ```evaluate_model(dataset_path, qa_chain)```: Evaluates the QA model against a dataset.
+
+### Gradio Interface
 The Gradio interface is set up using gr.Blocks, with components for file upload, parameter selection, and chat interaction. The interface includes callbacks for initializing the database, setting up the LLM, and handling chat conversations.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Contributing
+## Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
 
-Acknowledgments
+## Acknowledgments
 This project leverages the following libraries and services:
 
-LangChain
-Gradio
-Hugging Face
+- LangChain
+- <a href="https://github.com/gradio-app/gradio">Gradio</a>
+- <a href="https://huggingface.co/">Hugging Face</a>
 Feel free to reach out if you have any questions or need further assistance!

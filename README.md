@@ -10,6 +10,10 @@ This project implements a Retrieval-Augmented Generation (RAG) model using LangC
 - <b>Customizable Parameters</b>: Adjust LLM parameters such as temperature, max tokens, and top-k selection for fine-tuning the response generation.
 
 
+## Accuracy
+The metrics used for testing the following RAG Model is RAGA which is used by ATHINA AI. 
+This model evalutes the precision to which the answer is given.
+
 ## Installation
 To get started, follow these steps:
 
